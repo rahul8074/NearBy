@@ -1,0 +1,260 @@
+ 
+ 
+ .navbar{
+     position: fixed;
+     top: 0;
+     width: 100%;
+     height: 70px;
+     z-index: 999;
+    font-size: larger;
+    font-weight: 500;
+    font-size: 20px;
+    border-bottom:solid white 2px;
+    box-shadow: 0px 0px 20px 0px whitesmoke;
+   
+    
+ }
+
+ .navbar .logo{
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    background: linear-gradient(to right,red,blue);
+    color:transparent;
+    background-clip: text;
+     
+ }
+
+ .msg-form{
+    margin-top: 60px;  
+    font-family: cursive;
+     
+ }
+ 
+ 
+ .tweets{
+    width: 500px;
+    margin: auto;
+    
+    overflow: auto;
+    border-radius: 0px;
+    overflow-x:hidden;
+     
+ }
+
+ .tweets .card{
+    background-image: linear-gradient(180deg,lightgreen,lightblue, lightblue, lightgreen);
+  
+     
+ }
+ @media (min-width: 350px) {
+    body{
+        overflow-x: hidden;
+    }
+    .card{
+        max-width: 100vw;
+        float: left;  
+    }
+    .card .Card-header{
+        max-width: 100vw;
+        margin-right: 2px;
+       
+    }
+}
+@media (min-width: 1200px) {
+ .card{
+     width: 45rem;
+     display: flex;
+     justify-content: center;
+ }
+}
+
+
+/* Sign up page */
+
+.sign-up-page{
+    width: 100vw;
+    height: 100vh;
+    top: 10px;
+    position:absolute;
+    z-index: -1;    
+}
+
+.sign-up-page .signup{
+   font-weight: 1000;
+   margin: auto;
+   margin-top: 100px;
+   font-family: monospace;
+}
+
+.signup label{
+    font-size: 15pt;  
+}
+
+.sign-up-page .form-control{
+    
+    height: 40px;
+    font-size: 15px;
+     
+    
+}
+.sign-up-page .create-account{
+    background-color: none;
+    width: 100%;
+}
+ 
+/* responsive sign up and message  form  */
+ 
+@media only screen and (min-width: 300px) { 
+	.sign-up-page .signup {
+       min-width: 100%;  
+    }
+    .tweetform{
+        min-width: 100%;
+    }
+    .tweetform h2{
+        font-size: 20px;
+    }
+    .tweetform .form-control{
+        margin-right: -10%;
+        margin-left: -10%;
+        margin-bottom: 10px;
+        width: 120%;
+    }
+}
+@media only screen and (min-width: 600px) { 
+	.sign-up-page .signup {
+       min-width: 60%;  
+    }
+    .tweetform{
+        min-width: 80%;  
+    }
+    .tweetform h2{
+        font-size: 25px;
+    }
+    .tweetform .form-control{
+        margin: auto;
+        width: 100%;
+    }
+  
+}
+ 
+@media only screen and (min-width: 1000px) { 
+	.sign-up-page .signup {
+       min-width: 40%;  
+    }
+    .tweetform{
+        min-width: 1%;  
+    }
+    .tweetform .form-control{
+         margin: auto;
+         padding: auto;
+         width: 100%;
+    }
+}
+ 
+ 
+.border-img{
+    z-index: 999;
+    height: 10px;
+    border-radius: 0 0 240px 10%/40px;
+    background-image:linear-gradient(to right,blue,red)
+}
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .signup h2{
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    background: linear-gradient(to right,red,blue);
+    color:transparent;
+    background-clip: text;
+  }
+
+
+
+  /* login css */
+ 
+ .login-block{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 450px;
+ }
+ .login-block .login-items{
+     margin: 2px;
+     margin-top: 10px;
+     font-family: monospace;
+     font-size: 17px;
+     height: 40px;
+     border-style: none;
+     border-color: green;
+     transition: left 0.5s
+ }
+
+ /* //hiding login form when display mobile size */
+
+
+
+@media only screen and (min-width:1330px){
+    .login-block{
+        margin-left: 500px;
+    }
+}
+
+@media only screen and (max-width: 1300px) { 
+	.login-block{
+       margin-left: 300px;
+    }
+}
+@media only screen and (max-width: 1130px) { 
+	.login-block{
+       margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 1000px) { 
+	.login-block{
+         visibility: hidden;
+    }
+}
+
+ 
+
+/* tweet card */
+.tweets .card{
+   border-radius: 0px;
+    float: center;
+    margin: auto;
+}
+
+.card .Card-header{
+    
+    margin-left: -15px;
+    margin-bottom: -10px;
+  
+    width: 497px;
+    height: 45px;
+   
+}
+.Card-header div{
+         margin-top: 10px;
+         
+         font-family: monospace;
+         font-weight: 400;
+         font-size: 15px;
+}
+.Card-header #username{
+    float: left;
+    margin-left: 10px;
+}
+
+.Card-header #date{
+    
+    margin-right: 10px;
+    float: right;
+}
+
+ 
